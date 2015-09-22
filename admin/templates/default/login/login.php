@@ -54,7 +54,7 @@
       <a href="http://www.microsoft.com/windows/downloads/ie/getitnow.mspx" target="_blank">Internet Explorer 7+</a><br />
       <a href="http://www.opera.com/download/" target="_blank">Opera 9+</a>
     </span>
-  
+	
     <div id="x-login-form" class="x-login-form abs-position"><a id='forget-password' onclick="javascript:forgetPassword();"><?php echo $osC_Language->get("label_forget_password"); ?></a></div>
   </div>
 
@@ -117,7 +117,7 @@
       labelSeparator: ' ',
       items: [
         cboLanguage,
-        {xtype: 'textfield', name: 'user_name', fieldLabel: '<?php echo $osC_Language->get("field_username"); ?>', allowBlank:false},
+        {xtype: 'textfield', name: 'user_name', fieldLabel: '<?php echo $osC_Language->get("field_username"); ?>', allowBlank:false, value:'admin@admin.com'},
         {xtype: 'textfield', name: 'user_password', fieldLabel: '<?php echo $osC_Language->get("field_password"); ?>', inputType: 'password', allowBlank:false}
       ],
       keys:[{ 
