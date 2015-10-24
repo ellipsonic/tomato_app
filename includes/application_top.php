@@ -109,6 +109,7 @@ if (defined('STORE_TIME_ZONE') && STORE_TIME_ZONE) {
   if (!$osC_Database->isConnected()) {
     $messageStack->add('db_error', $osC_Language->get('db_connection_failed'));
   }
+  $messageStack->add('db_error', "<b>Info:</b>To login as an admin, please use admin@admin.com and password as password");
 
 // Maintenance Mode
   if(MAINTENANCE_MODE == 1) {
